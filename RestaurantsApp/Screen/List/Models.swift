@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 struct Root: Codable {
     let businesses: [Business]
@@ -47,6 +48,52 @@ extension RestaurantListViewModel {
         self.name = business.name
         self.imageUrl = business.imageUrl
         self.id = business.id
-        self.distance = business.distance / 1709.344 // Convert distance from meters to miles
+        self.distance = business.distance / 1609.344 // Convert distance from meters to miles
+    }
+}
+
+struct Details: Decodable {
+    let price: String
+    let phone: String
+    let isClosed: Bool
+    let rating: Double
+    let name: String
+    let photos: [URL]
+    let coordinates: CLLocationCoordinate2D
+}
+
+extension CLLocationCoordinate2D: Decodable {
+    
+    enum CodingKeys: CodingKey {
+        case latitude
+        case longitude
+    }
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let latitude = try container.decode(Double.self, forKey: .latitude)
+        let longitude = try container.decode(Double.self, forKey: .longitude)
+        self.init(latitude: latitude, longitude: longitude)
+    }
+}
+
+struct DetailsViewModel {
+    let price: String
+    let name: String
+    let isOpen: String
+    let phoneNumber: String
+    let rating: String
+    let photoUrls: [URL]
+    let coordinates: CLLocationCoordinate2D
+}
+
+extension DetailsViewModel {
+    init(details: Details) {
+        self.price = details.price
+        self.name = details.name
+        self.isOpen = details.isClosed ? "Closed" : "Open"
+        self.phoneNumber = details.phone
+        self.rating = "\(details.rating) / 5.0"
+        self.photoUrls = details.photos
+        self.coordinates = details.coordinates
     }
 }
