@@ -61,7 +61,6 @@ extension DetailsFoodViewController: UICollectionViewDataSource, UICollectionVie
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath) as! DetailsCollectionViewCell
         if let imageUrl = viewModel?.photoUrls[indexPath.item] {
-            print("imageUrl: \(imageUrl)")
             cell.imageView.af_setImage(withURL: imageUrl)
         }
         return cell
