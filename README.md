@@ -1,7 +1,7 @@
 # RestaurantsApp
 
 ![restaurantsapp1](https://github.com/nrshoudi/RestaurantsApp/blob/master/view1.jpg)
-![restaurantsapp2](https://github.com/nrshoudi/RestaurantsApp/blob/master/view2.jpg)
+![view2](https://user-images.githubusercontent.com/17602996/54168706-f6e1b300-4480-11e9-891b-2001a84e055f.jpg)
 
 
 
