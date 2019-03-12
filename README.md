@@ -1,8 +1,8 @@
 # RestaurantsApp
 
-![restaurantsapp1](https://github.com/nrshoudi/RestaurantsApp/blob/master/view1.jpg)
-![restaurantsapp2](https://user-images.githubusercontent.com/17602996/53479192-86529380-3a89-11e9-87ac-4d602bd46c82.gif)
-![restaurantsapp3](https://user-images.githubusercontent.com/17602996/53479235-9c605400-3a89-11e9-9760-32dae8b43ffd.gif)
+![screen1](https://user-images.githubusercontent.com/17602996/54169072-568c8e00-4482-11e9-88a5-de8a4b3e78e5.png) 
+![screen2](https://user-images.githubusercontent.com/17602996/54169076-5a201500-4482-11e9-8f5f-b578369b65eb.png) 
+![screen3](https://user-images.githubusercontent.com/17602996/54169083-6015f600-4482-11e9-921e-2b6f5b14bfe0.png)
 
 
 ## Project overview
