@@ -7,6 +7,7 @@
 
 ## Project overview
 This iOS app will provide you a list of nearest restaurants to your location. Also, you will find some details for each restaurant [images, price, phone number, rate, is open or not, and location].
+The API of restaurants is not support Saudi Arabia country.
 
 
 ## Build With
